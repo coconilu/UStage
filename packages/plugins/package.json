@@ -1,0 +1,8 @@
+{
+  "name": "plugins",
+  "version": "1.0.0",
+  "description": "Unified Stage Plugins",
+  "main": "index.ts",
+  "author": "BayesWang",
+  "license": "MIT"
+}
