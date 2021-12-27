@@ -4,5 +4,8 @@
   "description": "Unified Stage Render",
   "main": "index.ts",
   "author": "BayesWang",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "electron": "^16.0.5"
+  }
 }
