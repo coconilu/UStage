@@ -1,1 +1,1 @@
-export const PackageName = "Interface"
+export const PackageName = 'Interface'

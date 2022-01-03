@@ -1,1 +1,1 @@
-export const PackageName = "Transfer"
+export const PackageName = 'Transfer'

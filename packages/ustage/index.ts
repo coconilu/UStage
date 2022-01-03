@@ -1,5 +1,5 @@
-import {PackageName as TransferPackageName} from 'transfer'
+import { PackageName as TransferPackageName } from 'transfer'
 
-export const PackageName = "Main"
+export const PackageName = 'Main'
 
 console.log(TransferPackageName)

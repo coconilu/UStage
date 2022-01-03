@@ -1,8 +1,8 @@
 {
-  "name": "transfer",
-  "version": "1.0.0",
-  "description": "Unified Stage Transfer",
-  "main": "index.ts",
-  "author": "BayesWang",
-  "license": "MIT"
+	"name": "transfer",
+	"version": "1.0.0",
+	"description": "Unified Stage Transfer",
+	"main": "index.ts",
+	"author": "BayesWang",
+	"license": "MIT"
 }

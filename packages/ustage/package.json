@@ -1,11 +1,11 @@
 {
-  "name": "ustage",
-  "version": "1.0.0",
-  "description": "Unified Stage Main",
-  "main": "index.ts",
-  "author": "BayesWang",
-  "license": "MIT",
-  "dependencies": {
-    "transfer": "^1.0.0"
-  }
+	"name": "ustage",
+	"version": "1.0.0",
+	"description": "Unified Stage Main",
+	"main": "index.ts",
+	"author": "BayesWang",
+	"license": "MIT",
+	"dependencies": {
+		"transfer": "^1.0.0"
+	}
 }

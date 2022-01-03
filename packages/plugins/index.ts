@@ -1,1 +1,1 @@
-export const PackageName = "Plugins"
+export const PackageName = 'Plugins'
