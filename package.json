@@ -5,7 +5,16 @@
     "packages/*"
   ],
   "devDependencies": {
-    "lerna": "^4.0.0"
+    "@commitlint/cli": "^16.0.1",
+    "@commitlint/config-conventional": "^16.0.0",
+    "commitizen": "^4.2.4",
+    "conventional-changelog-cli": "^2.2.2",
+    "cz-conventional-changelog": "^3.3.0",
+    "eslint": "^8.6.0",
+    "husky": "^7.0.4",
+    "lerna": "^4.0.0",
+    "lint-staged": "^12.1.4",
+    "prettier": "^2.5.1"
   },
   "repository": {
     "type": "git",
@@ -14,8 +23,40 @@
   "keywords": [
     "Stage"
   ],
+  "scripts": {
+    "lint": "lint-staged",
+    "prepare": "husky install",
+    "commit": "cz",
+    "change-log": "conventional-changelog -p angular -i CHANGELOG.md -s"
+  },
+  "lint-staged": {
+    "*.ts": [
+      "prettier --write",
+      "eslint --fix",
+      "git add"
+    ],
+    "*.js": [
+      "prettier --write",
+      "eslint --cache --fix",
+      "git add"
+    ],
+    "*.vue": [
+      "prettier --write",
+      "eslint --cache --fix",
+      "git add"
+    ],
+    "*.{json,md,yml,css}": [
+      "prettier --write",
+      "git add"
+    ]
+  },
   "bugs": {
     "url": "https://github.com/coconilu/UStage/issues"
   },
-  "homepage": "https://github.com/coconilu/UStage#readme"
+  "homepage": "https://github.com/coconilu/UStage#readme",
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
 }
