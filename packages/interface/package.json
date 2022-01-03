@@ -1,0 +1,8 @@
+{
+	"name": "interface",
+	"version": "1.0.0",
+	"description": "Unified Stage Interface",
+	"main": "index.ts",
+	"author": "BayesWang",
+	"license": "MIT"
+}

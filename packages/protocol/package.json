@@ -1,0 +1,8 @@
+{
+	"name": "protocol",
+	"version": "1.0.0",
+	"description": "Unified Stage Protocol",
+	"main": "index.ts",
+	"author": "BayesWang",
+	"license": "MIT"
+}
