@@ -19,10 +19,12 @@ Unified Stage
 
 - [ ] 规范提交：husky + lint-staged + commitizen
 - [ ] 规范代码：prettier + eslint
+- [ ] 路径 alias
 
 3. render
 
-- [ ] 引入 electron-forge
+- [x] 引入 electron-forge
+- [ ] 引入 react + antv + mobx + react-location
 - [ ] 支持 tab 展示
 - [ ] 支持插件
 
