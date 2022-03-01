@@ -1,9 +1,6 @@
 {
 	"name": "root",
 	"private": true,
-	"workspaces": [
-		"packages/*"
-	],
 	"devDependencies": {
 		"@commitlint/cli": "^16.0.1",
 		"@commitlint/config-conventional": "^16.0.0",
@@ -17,7 +14,14 @@
 		"husky": "^7.0.4",
 		"lerna": "^4.0.0",
 		"lint-staged": "^12.1.4",
-		"prettier": "^2.5.1"
+		"prettier": "^2.5.1",
+		"typescript": "^4.0.2"
+	},
+	"dependencies": {
+		"interface": "workspace: *",
+		"plugins": "workspace: *",
+		"protocol": "workspace: *",
+		"transfer": "workspace: *"
 	},
 	"repository": {
 		"type": "git",
@@ -30,27 +34,24 @@
 		"lint": "lint-staged",
 		"prepare": "husky install",
 		"commit": "cz",
-		"change-log": "conventional-changelog -p angular -i CHANGELOG.md -s"
+		"change-log": "conventional-changelog -p angular -i CHANGELOG.md -s",
+		"dev": "pnpm run start --filter render"
 	},
 	"lint-staged": {
 		"*.ts": [
 			"prettier --write",
-			"eslint --fix",
-			"git add"
+			"eslint --fix"
 		],
 		"*.js": [
 			"prettier --write",
-			"eslint --cache --fix",
-			"git add"
+			"eslint --cache --fix"
 		],
 		"*.vue": [
 			"prettier --write",
-			"eslint --cache --fix",
-			"git add"
+			"eslint --cache --fix"
 		],
 		"*.{json,md,yml,css}": [
-			"prettier --write",
-			"git add"
+			"prettier --write"
 		]
 	},
 	"bugs": {
